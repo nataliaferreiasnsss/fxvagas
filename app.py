@@ -5,9 +5,15 @@ from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
 
+# @app.route("/")
+# def index():
+#     return render_template("page.html")
+
+
 @app.route("/")
 def index():
-    return render_template("page.html")
+    return render_template("login_portfolio.html")
+
 
 
 @app.route("/login")
